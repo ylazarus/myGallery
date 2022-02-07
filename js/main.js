@@ -79,11 +79,16 @@ function renderModals() {
 }
 
 function onSendEmail(){
-    var eladdress = $('input[name=email-address]')
-    var address = eladdress.value
-    var subject = $('input[name=subject]')
-    var message = $('input[name=email-body]')
-    console.log(address, subject, message);
+    var elAddress = document.querySelector('input[name=email-address]')
+    var address = elAddress.value
+    var elSubject = document.querySelector('input[name=subject]')
+    var subject = elSubject.value
+    var elMessage = document.querySelector('input[name=email-body]')
+    var message = elMessage.value
+
+    var url = `https://mail.google.com/mail/u/0/?fs=1&to=ylazarus@gmail.com&su=${subject}_from_${address}&body=${message}&tf=cm`
+    window.open(url)
+
 }
 
 
