@@ -1,0 +1,35 @@
+body {
+  background-color: black;
+  color:white;
+  text-align: center;
+}
+
+.PAC-MAN {
+  width: 30px;
+  height: 30px;
+  opacity: 90%;
+  transform: rotate(0deg);
+}
+
+table {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.modal {
+  display: none;
+  font-size:x-large
+}
+
+/* .formLine {
+  margin:10px;
+  padding:10px;
+  background-color: cornflowerblue;
+} */
